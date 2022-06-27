@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  height: 100vh;
+}
+.logo {
+  background-image: url(../../assets/bg.jpg);
+  background-size: cover;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.header {
+  text-decoration: underline;
+  font-size: 32px;
+}
+
+.forget {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.forgetText {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #c3c5e8;
+  transition: 0.7s;
+}
+
+.forgetText:hover {
+  color: #3a3d7a;
+  transform: translateY(5px);
+}
+.forgetText:active {
+}
