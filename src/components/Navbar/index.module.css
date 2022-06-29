@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  margin-left: 10px;
+}
+.img {
+  width: 45px;
+  height: 45px;
+}
+.avatar {
+  margin-top: 5px;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 15vw;
+  background-color: #706fa7;
+  border: 1px solid #706fa7;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.bell {
+  position: relative;
+}
+.num {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+}
+.info {
+  display: block;
+  position: absolute;
+  top: calc(10vh + 3px);
+  right: 8px;
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  border-radius: 1px solid white;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 2px rgb(0, 0, 0);
+  -webkit-box-shadow: 0 0 2px rgb(0, 0, 0);
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+  z-index: 50;
+}
+
+.user_contain {
+  display: flex;
+  justify-content: space-around;
+}
+.name_user {
+  color: rgb(124, 120, 120);
+  font-weight: 300;
+}
+.icon_contain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+.icon_contain:hover {
+  cursor: pointer;
+}

@@ -4,8 +4,8 @@
   height: 100vh;
 }
 .logo {
-  background-image: url(../../assets/bg.jpg);
-  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 .form {
   display: flex;
@@ -20,6 +20,13 @@
   font-size: 45px;
   letter-spacing: 2px;
 }
+.header1 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.words {
+  color: rgb(97, 94, 94);
+}
 
 .forget {
   display: flex;
@@ -31,6 +38,7 @@
   cursor: pointer;
   color: #c3c5e8;
   transition: 0.7s;
+  align-self: flex-end;
 }
 
 .forgetText:hover {
