@@ -12,6 +12,18 @@
 .container-expand {
   width: 240px;
 }
+.open_icon {
+  position: absolute;
+  left: 62px;
+  color: white;
+  background-color: #8e8dc2f4;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 500ms;
+}
+.open_icon.expand {
+  left: 230px;
+}
 
 .header {
   display: flex;

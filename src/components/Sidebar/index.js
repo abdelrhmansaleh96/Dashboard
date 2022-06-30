@@ -4,7 +4,8 @@ import sideBarItems from "../../helpers/SidebarItemData";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import SubMenu from "../SubMenu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 const Sidebar = () => {
   const [active, setActive] = useState(false);
   const [submenu, setSubmenu] = useState(false);
@@ -17,6 +18,20 @@ const Sidebar = () => {
           : classes.container
       }
     >
+      <div
+        onClick={() => {
+          setActive(!active);
+          setSubmenu(false);
+          setClicked(0);
+        }}
+        className={
+          active
+            ? `${classes.expand} ${classes["open_icon"]}`
+            : classes["open_icon"]
+        }
+      >
+        {active ? <ArrowBackIosNewIcon /> : <ArrowForwardIosIcon />}
+      </div>
       {sideBarItems.map((item, index) => {
         return (
           <div
@@ -30,7 +45,7 @@ const Sidebar = () => {
             <div className={classes.con}>
               <div
                 onClick={() => {
-                  setActive(!active);
+                  setActive(true);
                   setClicked(index);
                 }}
                 className={

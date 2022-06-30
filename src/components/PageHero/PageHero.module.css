@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: 3px 10px 3px 10px;
+  font-size: 9px;
+  box-shadow: 0 2px 2px -2px gray;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #706fa7;
+}
+.space_icon {
+  margin: 3px 25px 3px 25px;
+  color: #cdccd1;
+}
+.direction h1 {
+  font-weight: 600;
+}
